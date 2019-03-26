@@ -1,0 +1,10 @@
+"Qty";"Value";"Device";"Package";"Parts";"Description";"DIGIKEY#";"I_MAX";"MANF";"MANF#";"OPERATING_TEMP";"PACKAGE";"TC";"TOLERANCE";"VALUE";"VOLTAGE";"V_MAX";"V_MAX";
+"14";"0.1µF";"0.1µF-16V_10%_X7R-0603";"C0603";"C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, C15";"";"490-1532-1-ND";"";"Murata Electronics North America";"GRM188R71C104KA01D";"-55°C ~ 125°C";"0603";"X7R";"+-10%";"0.1µF";"16V";"";"";
+"1";"4.7µF";"4.7µF-6.3V_10%_X5R-0603";"C0603";"C14";"";"490-3297-1-ND";"";"Murata Electronics North America";"GRM188R60J475KE19D";"-55°C ~ 85°C";"0603";"X5R";"+-10%";"4.7µF";"6.3V";"";"";
+"1";"8MHz";"CRYSTAL-NX3225GD";"NX3225GD";"Z1";"";"644-1178-1-ND";"";"NDK";"NX3225GD-8MHZ-STD-CRA-3";"";"";"";"";"";"";"";"";
+"2";"8pF";"8PF-25V_10%_X7R-0603";"C0603";"C16, C17";"";"490-12681-1-ND";"";"Murata Electronics North America";"GRM0335C1E8R0CA01D";"-55°C ~ 125°C";"0603";"NP0";"±0.25pF";"8pF";"25V";"";"";
+"1";"AP2127-3.3";"AP2127-3.3";"SOT23-5";"IC3";"IC REG LINEAR 3.3V 300MA SOT23-5";"AP2127K-3.3TRG1DITR-ND";"300mA";"Diodes Incorporated";"AP2127K-3.3TRG1";"";"";"";"";"";"";"6V";"";
+"2";"CON-4P-TABS-JST_GH-RA";"CON-4P-TABS-JST_GH-RA";"JST_GH-4P-RA";"CON1, CON2";"Connector Receptacle 4 Position 0.049" (1.25mm) Tin Surface Mount";"455-1566-1-ND";"";"JST Sales America Inc";"SM04B-GHS-TB(LF)(SN)";"";"";"";"";"";"";"";"";
+"1";"STM32F042F4PX";"STM32F042F4PX";"TSSOP20";"IC2";"ARM® Cortex®-M0 STM32F0 Microcontroller IC 32-Bit 48MHz 16KB (16K x 8) FLASH 20-TSSOP";"497-17343-ND";"";"STMicroelectronics";"STM32F042F4P6";"";"";"";"";"";"";"";"";
+"1";"TJA1051";"TJA1051";"SOT782-1";"IC1";"1/1 Transceiver Half CAN 8-HVSON (3x3)";"568-8686-2-ND";"";"NXP Semiconductors";"TJA1051TK/3,118";"";"";"";"";"";"";"";"";
+"9";"WS2812B";"WS2812B";"WS2812B";"LED1, LED2, LED3, LED4, LED5, LED6, LED7, LED8, LED9";"";"";"";"";"";"";"";"";"";"";"";"";"";
