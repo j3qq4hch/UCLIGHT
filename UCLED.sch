@@ -924,7 +924,8 @@ MAX3223-MAX3243.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="STM32F042F4PX" urn="urn:adsk.eagle:component:2473377/5" prefix="IC" library_version="16">
+<deviceset name="STM32F042F4PX" urn="urn:adsk.eagle:component:2473377/6" prefix="IC" library_version="17">
+<description>ARM® Cortex®-M0 STM32F0 Microcontroller IC 32-Bit 48MHz 16KB (16K x 8) FLASH 20-TSSOP</description>
 <gates>
 <gate name="G$1" symbol="STM32F042D4PX" x="0" y="0"/>
 </gates>
@@ -957,8 +958,7 @@ MAX3223-MAX3243.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="COMPEL" value="http://www.compel.ru/infosheet/ST/STM32F042F4P6/" constant="no"/>
-<attribute name="DIGIKEY#" value="" constant="no"/>
+<attribute name="DIGIKEY#" value="497-17343-ND" constant="no"/>
 <attribute name="MANF" value="STMicroelectronics" constant="no"/>
 <attribute name="MANF#" value="STM32F042F4P6" constant="no"/>
 </technology>
@@ -970,8 +970,8 @@ MAX3223-MAX3243.pdf</description>
 </library>
 <library name="misc" urn="urn:adsk.eagle:library:5347860">
 <packages>
-<package name="WS2812B" urn="urn:adsk.eagle:footprint:8849293/1" library_version="36" library_locally_modified="yes">
-<circle x="-0.7" y="2" radius="0.2236" width="0.2032" layer="21"/>
+<package name="WS2812B" urn="urn:adsk.eagle:footprint:8849293/1" locally_modified="yes" library_version="43" library_locally_modified="yes">
+<circle x="-1.1" y="2.1" radius="0.2" width="0.2" layer="21"/>
 <circle x="0" y="0" radius="2" width="0.127" layer="51"/>
 <wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2" width="0.127" layer="51"/>
 <wire x1="-1.8" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="51"/>
@@ -1004,9 +1004,14 @@ MAX3223-MAX3243.pdf</description>
 <smd name="P$1" x="-0.35" y="0" dx="0.7" dy="0.7" layer="1" rot="R90" stop="no" thermals="no" cream="no"/>
 <smd name="P$2" x="0.35" y="0" dx="0.7" dy="0.7" layer="1" rot="R90" stop="no" thermals="no" cream="no"/>
 </package>
+<package name="FIDUCIA-MOUNT" urn="urn:adsk.eagle:footprint:7544828/1" library_version="43" library_locally_modified="yes">
+<circle x="0" y="0" radius="0.5" width="2.1844" layer="29"/>
+<circle x="0" y="0" radius="1.5" width="0.127" layer="41"/>
+<smd name="P$1" x="0" y="0" dx="1.016" dy="1.016" layer="1" roundness="100" cream="no"/>
+</package>
 </packages>
 <packages3d>
-<package3d name="WS2812B" urn="urn:adsk.eagle:package:8849294/2" type="model" library_version="36" library_locally_modified="yes">
+<package3d name="WS2812B" urn="urn:adsk.eagle:package:8849294/2" locally_modified="yes" type="model" library_version="43" library_locally_modified="yes">
 <packageinstances>
 <packageinstance name="WS2812B"/>
 </packageinstances>
@@ -1014,6 +1019,11 @@ MAX3223-MAX3243.pdf</description>
 <package3d name="CONNECTION" urn="urn:adsk.eagle:package:7439847/1" type="box" library_version="36" library_locally_modified="yes">
 <packageinstances>
 <packageinstance name="CONNECTION"/>
+</packageinstances>
+</package3d>
+<package3d name="FIDUCIA-MOUNT" urn="urn:adsk.eagle:package:7544833/1" type="box" library_version="43" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="FIDUCIA-MOUNT"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1063,9 +1073,12 @@ MAX3223-MAX3243.pdf</description>
 <pin name="P$1" x="-2.54" y="0" visible="off" length="short"/>
 <pin name="P$2" x="2.54" y="0" visible="off" length="short" rot="R180"/>
 </symbol>
+<symbol name="FIDUCIAL" urn="urn:adsk.eagle:symbol:7544827/1" library_version="43" library_locally_modified="yes">
+<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="WS2812B" urn="urn:adsk.eagle:component:8849295/2" prefix="LED" library_version="36" library_locally_modified="yes">
+<deviceset name="WS2812B" urn="urn:adsk.eagle:component:8849295/2" locally_modified="yes" prefix="LED" library_version="43" library_locally_modified="yes">
 <gates>
 <gate name="G$1" symbol="WS2812B" x="0" y="0"/>
 </gates>
@@ -1098,6 +1111,23 @@ MAX3223-MAX3243.pdf</description>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:7439847/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="BOM" value="EXCLUDE" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FIDUCIALMOUNT" urn="urn:adsk.eagle:component:7544838/1" prefix="FD" library_version="43" library_locally_modified="yes">
+<gates>
+<gate name="G$1" symbol="FIDUCIAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FIDUCIA-MOUNT">
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:7544833/1"/>
 </package3dinstances>
 <technologies>
 <technology name="">
@@ -2088,6 +2118,7 @@ package type OT</description>
 <attributes>
 </attributes>
 <variantdefs>
+<variantdef name="BASIC" current="yes"/>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
@@ -2104,7 +2135,9 @@ package type OT</description>
 <part name="GND2" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GND" device="" value="GND"/>
 <part name="GND3" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GND" device="" value="GND"/>
 <part name="+P1" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="5V" device=""/>
-<part name="IC2" library="stm32" library_urn="urn:adsk.eagle:library:2473361" deviceset="STM32F042F4PX" device="" package3d_urn="urn:adsk.eagle:package:2473346/4"/>
+<part name="IC2" library="stm32" library_urn="urn:adsk.eagle:library:2473361" deviceset="STM32F042F4PX" device="" package3d_urn="urn:adsk.eagle:package:2473346/4">
+<attribute name="DIGIKEY#" value="497-17343-ND"/>
+</part>
 <part name="LED1" library="misc" library_urn="urn:adsk.eagle:library:5347860" deviceset="WS2812B" device="" package3d_urn="urn:adsk.eagle:package:8849294/2"/>
 <part name="+P2" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="5V" device=""/>
 <part name="GND1" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GND" device="" value="GND"/>
@@ -2164,19 +2197,41 @@ package type OT</description>
 <part name="C17" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="8PF" device="-0603" package3d_urn="urn:adsk.eagle:package:2539381/2" technology="-25V_10%_X7R" value="8pF"/>
 <part name="Z1" library="myxa_masterlib" library_urn="urn:adsk.eagle:library:1040030" deviceset="CRYSTAL" device="-NX3225GD" package3d_urn="urn:adsk.eagle:package:1040148/2" value="8MHz"/>
 <part name="GND19" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GND" device="" value="GND"/>
-<part name="J1" library="misc" library_urn="urn:adsk.eagle:library:5347860" deviceset="CONNECTION" device="" package3d_urn="urn:adsk.eagle:package:7439847/1"/>
+<part name="J1" library="misc" library_urn="urn:adsk.eagle:library:5347860" deviceset="CONNECTION" device="" package3d_urn="urn:adsk.eagle:package:7439847/1">
+<variant name="BASIC" populate="no"/>
+</part>
 <part name="GND20" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GND" device="" value="GND"/>
-<part name="J2" library="misc" library_urn="urn:adsk.eagle:library:5347860" deviceset="CONNECTION" device="" package3d_urn="urn:adsk.eagle:package:7439847/1"/>
+<part name="J2" library="misc" library_urn="urn:adsk.eagle:library:5347860" deviceset="CONNECTION" device="" package3d_urn="urn:adsk.eagle:package:7439847/1">
+<variant name="BASIC" populate="no"/>
+</part>
 <part name="GND22" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GND" device="" value="GND"/>
 <part name="GND23" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="GND" device="" value="GND"/>
 <part name="CON1" library="Connectors" library_urn="urn:adsk.eagle:library:3750510" deviceset="CON-4P-TABS" device="-RA" package3d_urn="urn:adsk.eagle:package:1040150/6" technology="-JST_GH"/>
 <part name="CON2" library="Connectors" library_urn="urn:adsk.eagle:library:3750510" deviceset="CON-4P-TABS" device="-RA" package3d_urn="urn:adsk.eagle:package:1040150/6" technology="-JST_GH"/>
-<part name="PAD1" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-S_2X2" package3d_urn="urn:adsk.eagle:package:3188704/1"/>
-<part name="PAD2" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-S_2X2" package3d_urn="urn:adsk.eagle:package:3188704/1"/>
-<part name="PAD3" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-S_2X2" package3d_urn="urn:adsk.eagle:package:3188704/1"/>
-<part name="PAD4" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-S_2X2" package3d_urn="urn:adsk.eagle:package:3188704/1"/>
-<part name="PAD5" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-S_2X2" package3d_urn="urn:adsk.eagle:package:3188704/1"/>
-<part name="PAD6" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-S_2X2" package3d_urn="urn:adsk.eagle:package:3188704/1"/>
+<part name="PAD1" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-S_2X2" package3d_urn="urn:adsk.eagle:package:3188704/1">
+<variant name="BASIC" populate="no"/>
+</part>
+<part name="PAD2" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-S_2X2" package3d_urn="urn:adsk.eagle:package:3188704/1">
+<variant name="BASIC" populate="no"/>
+</part>
+<part name="PAD3" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-S_2X2" package3d_urn="urn:adsk.eagle:package:3188704/1">
+<variant name="BASIC" populate="no"/>
+</part>
+<part name="PAD4" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-S_2X2" package3d_urn="urn:adsk.eagle:package:3188704/1">
+<variant name="BASIC" populate="no"/>
+</part>
+<part name="PAD5" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-S_2X2" package3d_urn="urn:adsk.eagle:package:3188704/1">
+<variant name="BASIC" populate="no"/>
+</part>
+<part name="PAD6" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-S_2X2" package3d_urn="urn:adsk.eagle:package:3188704/1">
+<variant name="BASIC" populate="no"/>
+</part>
+<part name="FD1" library="misc" library_urn="urn:adsk.eagle:library:5347860" deviceset="FIDUCIALMOUNT" device="" package3d_urn="urn:adsk.eagle:package:7544833/1">
+<variant name="BASIC" populate="no"/>
+</part>
+<part name="FD2" library="misc" library_urn="urn:adsk.eagle:library:5347860" deviceset="FIDUCIALMOUNT" device="" package3d_urn="urn:adsk.eagle:package:7544833/1">
+<variant name="BASIC" populate="no"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -2482,6 +2537,8 @@ package type OT</description>
 <instance part="PAD6" gate="G$1" x="243.84" y="149.86" smashed="yes" rot="MR0">
 <attribute name="NAME" x="243.84" y="151.13" size="1.27" layer="95" font="vector" ratio="15" rot="MR0" align="center"/>
 </instance>
+<instance part="FD1" gate="G$1" x="12.7" y="106.68" smashed="yes"/>
+<instance part="FD2" gate="G$1" x="12.7" y="99.06" smashed="yes"/>
 </instances>
 <busses>
 </busses>
